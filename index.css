@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 800px;
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #18436B;
+}
+
+.container{
+  width: 400px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s ease all;
+  background-size: 200% 200%;
+  overflow-y: hidden;
+  height: 100px;
+  max-height: 100px;
+  transition: 1s ease all;
+}
+.container.active{
+  height: auto;
+  max-height: 600px;
+}
+
+.weather__info{
+  width: 360px;
+}
+
+.weather__input{
+  font-size: 24px;
+  font-family: "Rubik", sans-serif;
+  border:none;
+  border-bottom: 2px solid grey;
+  margin-right: 25px;
+  padding-bottom: 5px;
+  padding-top: 35px;
+}
+
+.city__name{
+  margin-top: 50px;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.container p {
+  margin: 0;
+}
+
+p.temp{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+p.desc{
+  font-size: 36px;
+  
+}
+
+.humidity{
+  padding-bottom: 25px;
+}
+
+p.weather__emoji{
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+.error{
+  font-weight: 500;
+  color: white;
+  margin: 30px 0;
+}
